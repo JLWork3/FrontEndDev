@@ -4,7 +4,7 @@ Women Who Code - NYC : Front End Development Study Group (www.meetup.com/WomenWh
 **Types of coders:**
 
 Newbie:
-N00b = don’t know ANY programming language and/or concepts
+++N00b++ = don’t know ANY programming language and/or concepts
 
 JS Beginner:
 Beg = Some basic programming experience but dont know Javascript
