@@ -1,4 +1,6 @@
-Women Who Code - NYC - Front End Development Study Group (www.meetup.com/WomenWhoCodeNYC)
+Women Who Code - NYC 
+Front End Development Study Group 
+www.meetup.com/WomenWhoCodeNYC
 ==========  
 
 What type of coder are you!? 
