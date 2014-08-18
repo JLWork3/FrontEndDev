@@ -1,5 +1,4 @@
-Women Who Code - NYC 
-Front End Development Study Group 
+Women Who Code - NYC : Front End Development Study Group 
 www.meetup.com/WomenWhoCodeNYC
 ==========  
 
