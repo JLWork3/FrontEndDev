@@ -1,7 +1,7 @@
 Women Who Code - NYC : Front End Development Study Group (www.meetup.com/WomenWhoCodeNYC)
 ==========  
 
-Types of coders:
+**Types of coders:**
 
 Newbie:
 N00b = don’t know ANY programming language and/or concepts
