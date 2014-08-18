@@ -1,7 +1,5 @@
-FrontEndDev
-===========
-
-Materials and Resources for participants in the front-end development study group
+Women Who Code - NYC - Front End Development Study Group (http://www.meetup.com/WomenWhoCodeNYC)
+==========  
 
 What type of coder are you!? 
 
