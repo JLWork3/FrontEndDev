@@ -7,8 +7,10 @@ Newbie:
 N00b = don’t know ANY programming language and/or concepts
 
 JS Beginner:
-Beg = Some basic programming experience but dont know Javascript \n
+Beg = Some basic programming experience but dont know Javascript 
+
 Beg-Inter = Intermediate knowledge in other programming languages but NOT Javascript
+
 Beg-Pro = Advanced knowledge in other programming languages but NOT Javascript
 
 JS Intermediate:
