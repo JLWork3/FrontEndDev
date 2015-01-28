@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Project 2</title>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="project2.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script> 
+  <script type="text/javascript" src="project2.js"></script>
+</head>
+
+<body>
+	<div id="header" class="top">
+		<div id="title"><h1>FIFA Pool</h1></div>
+		<div id="user">
+			<form>
+				E-mail: <input type="email" id="email" name="email" placeholder="xxx@xxx.com" autocomplete="off"><br>
+				Password: <input type="text" id="password" name="password" autocomplete="off"><br>
+				<button type="button" onclick="save()">Save</button>
+				<button type="button" onclick="load()">Load</button>
+				<button type="button" onclick="rset()">Reset</button>
+			</form>
+		</div>
+	</div>
+
+
+<!--Change code to generate divs on load-->
+	<div id="groups" class="rounds">
+		<div class="teams">
+			<h3> Team A <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">Brazil</li>
+				<li class="ui-state-default">Mexico</li>
+				<li class="ui-state-default">Croatia</li>
+				<li class="ui-state-default">Cameroon</li>
+			</ul>
+		</div>
+		<div class="teams">
+			<h3> Team B <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">Netherlands</li>
+				<li class="ui-state-default">Chile</li>
+				<li class="ui-state-default">Spain</li>
+				<li class="ui-state-default">Australia</li>
+			</ul>
+		</div>
+		<div class="teams">
+			<h3> Team C <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">Colombia</li>
+				<li class="ui-state-default">Greece</li>
+				<li class="ui-state-default">C&#244;te D'Ivoire</li>
+				<li class="ui-state-default">Japan</li>
+			</ul>
+		</div>
+		<div class="teams">
+			<h3> Team D <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">Costa Rica</li>
+				<li class="ui-state-default">Uruguay</li>
+				<li class="ui-state-default">Italy</li>
+				<li class="ui-state-default">England</li>
+			</ul>
+		</div>
+
+		
+		<div class="teams">
+			<h3> Team E <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">France</li>
+				<li class="ui-state-default">Switzerland</li>
+				<li class="ui-state-default">Ecuador</li>
+				<li class="ui-state-default">Honduras</li>
+			</ul>
+		</div>
+		<div class="teams">
+			<h3> Team F <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">Argentina</li>
+				<li class="ui-state-default">Nigeria</li>
+				<li class="ui-state-default">Bosnia &amp Herzegovina</li>
+				<li class="ui-state-default">Iran</li>	
+			</ul>
+		</div>
+		<div class="teams">
+			<h3> Team G <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">Germany</li>
+				<li class="ui-state-default">USA</li>
+				<li class="ui-state-default">Portugal</li>
+				<li class="ui-state-default">Ghana</li>
+			</ul>
+		</div>
+		<div class="teams">
+			<h3> Team H <h3>
+			<ul class="sortable">
+				<li class="ui-state-default">Belgium</li>
+				<li class="ui-state-default">Algeria</li>
+				<li class="ui-state-default">Russia</li>
+				<li class="ui-state-default">Korea Republic</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="round16" class="rounds column">
+		<div class="teams match">
+		    <div class="draggable r1"></div>
+		    <div class="draggable r1"></div>
+		</div>
+		<div class="teams match">
+		    <div class="draggable r2"></div>
+		    <div class="draggable r2"></div>
+		</div>
+		<div class="teams match">
+		    <div class="draggable r3"></div>
+		    <div class="draggable r3"></div>
+		</div>
+		<div class="teams match">
+		    <div class="draggable r4"></div>
+		    <div class="draggable r4"></div>
+		</div>
+		<div class="teams match">
+		    <div class="draggable r5"></div>
+		    <div class="draggable r5"></div>
+		</div>
+		<div class="teams match">
+		    <div class="draggable r6"></div>
+		    <div class="draggable r6"></div>
+		</div>
+		<div class="teams match">
+		    <div class="draggable r7"></div>
+		    <div class="draggable r7"></div>
+		</div>
+		<div class="teams match">
+		    <div class="draggable r8"></div>
+		    <div class="draggable r8"></div>
+		</div>
+	</div>
+
+
+	<div id="quarter" class="rounds column">
+		<div class="teams match">
+		    <div class="droppable draggable q1"></div>
+		    <div class="droppable draggable q2"></div>
+		</div>
+		<div class="teams match">
+		    <div class="droppable draggable q3"></div>
+		    <div class="droppable draggable q4"></div>
+		</div>
+		<div class="teams match">
+		    <div class="droppable draggable q5"></div>
+		    <div class="droppable draggable q6"></div>
+		</div>
+		<div class="teams match">
+		    <div class="droppable draggable q7"></div>
+		    <div class="droppable draggable q8"></div>
+		</div>
+	</div>
+
+
+
+	<div id="semi" class="rounds column">
+		<div class="teams match">
+		    <div class="droppable draggable s1"></div>
+		    <div class="droppable draggable s2"></div>
+		</div>
+		<div class="teams match">
+		    <div class="droppable draggable s3"></div>
+		    <div class="droppable draggable s4"></div>
+		</div>
+	</div>
+
+	<div id="final" class="rounds column">
+		<div class="teams match">
+		    <div class="droppable draggable f1"></div>
+		    <div class="droppable draggable f2"></div>
+		</div>
+	</div>
+
+	<div id="thirdPlace" class="rounds column">
+		<div class="teams match">
+		    <div class="droppable draggable t1"></div>
+		    <div class="droppable draggable t2"></div>
+		</div>
+	</div>
+
+<div id="podium" class="rounds">
+	<div class="droppable draggable">2nd Place</div>
+	<div class="droppable draggable">1st Place</div>
+	<div class="droppable draggable">3rd Place</div>
+</div>
+
+
+</body>
+</html>

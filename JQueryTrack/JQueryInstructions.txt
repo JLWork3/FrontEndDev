@@ -1,0 +1,5 @@
+Checkout a copy of this project and modify the code to make it more efficient and create your own dragable betting pool!
+
+Save your work and add it to JQueryExamples!
+
+This project highlights implementing basic JQueryUI commands.

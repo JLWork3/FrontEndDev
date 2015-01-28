@@ -1,0 +1,58 @@
+/*Keep user info at top*/
+html {background: black; color: white;}
+#header {
+	top:0px;
+}
+
+#title{float: left; display: inline;}
+#user{float:right; display: inline;}
+
+
+/* Progressing rounds are displayed below */
+.rounds, .top {
+	float: left; display:block; clear:left;
+	border: green solid 10px; width:100%;
+}
+
+
+
+/*Float competitor groups side by side */
+.teams {
+	float:left; display:inline-block;
+	border: white solid 5px;
+	text-align: center;
+	min-width: 100px;
+	margin: 5px;
+
+}
+
+.teams div {border:white solid 5px; min-height: 40px; min-width: 100px; color: white;
+	
+}
+
+/* centering boxes */
+#round16 > * {margin-left: 4%; margin-right: 2%}
+#quarter > * {margin-left: 10%; margin-right: 8%}
+#semi > * {margin-left: 22%; margin-right: 20%}
+#thirdPlace > * {margin-left: 10%;}
+#final > * {margin-left: 46%;}
+
+ /*Group styles*/
+  .sortable { list-style-type: none; margin: 0; padding: 0; width: 220px;  }
+  .sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1em; height: 18px; text-decoration: none; }
+
+/*Podium*/
+#podium{
+	position: relative; margin-left: 41%; width: 350px; height: 350px; padding: 0px 0px; border: none; color: white; text-align: center;
+}
+#podium :nth-child(1){
+	float: left; top: -100px; width: 100px; height: 200px; background-color: silver; margin: 0px 0px 0px 0px; padding: 0px 0px; margin-right: 0px;
+}
+#podium :nth-child(2){
+	float: left; top: 0px; width: 150px; height: 300px; background-color:gold; margin: 0px 0px 0px 0px; padding: 0px 0px; margin-right: 0px;
+}
+#podium :nth-child(3){
+	float: left; top: -200px; width: 100px; height: 100px; background-color:chocolate; margin: 0px 0px 0px 0px; padding: 0px 0px; margin-right: 0px;
+}
+
+
