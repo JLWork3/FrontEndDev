@@ -1,4 +1,5 @@
 //Three plus hours of my life right here. Remember to load document before calling f(x)'s!
+//Add comments describing functions, add functionality where commented and clean up the code
 $(document).ready(function(){
 
 var winners=0;
@@ -24,7 +25,8 @@ var Location1Id; //returns first location for transfer of var
     	}
     });
     $( ".sortable" ).disableSelection();
-    $(".draggable").draggable({helper: "clone"});
+    //make the .draggable class draggable
+    
     
 
 
@@ -115,18 +117,10 @@ var Location1Id; //returns first location for transfer of var
 	        }
 	  	});
 
-	  	$(".f2").droppable({ 
-	    	accept: ".s3, .s4",
-	    	tolerance: "intersect",
-	    	drop: function(event, ui) {
-	    	   $(this).empty();
-	           $(this).append($(ui.draggable).html());
-	           $(".t2").empty();
-	           if ($(ui.draggable).html() == $(".s3").html()) { 
-	           		$(".t2").append($(".s4").html());
-	           } else {$(".t2").append($(".s3").html());}
-	        }
-	  	});
+
+	  	//make f2 droppable restrictions
+
+	 
 
 	  	$("#podium :nth-child(1)").droppable({
 	  		accept: ".f1, .f2",
@@ -250,7 +244,9 @@ document.cookie = userString+"; expires=Thu, 18 Dec 2016 12:00:00 GMT";
 
 //Load Button - get user email and password. compare to JSON Data. return predictions.
 function load(){
-	JSONobj = JSON.parse(document.cookie);
+
+	//load and parse the cookie into json object
+	
 	//console.log(JSON.parse(userData));
 	
 //	email = $("#email").val();
